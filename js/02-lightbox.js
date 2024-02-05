@@ -15,13 +15,10 @@ for (const item of galleryItems){
         </div> `;
     gallery.insertAdjacentHTML(`beforeend`, images)
 }
-gallery.addEventListener("click",(event) => {
-    event.preventDefault();
-if(event.target.classList.contains("gallery__image")){
-    const lightbox = basicLightbox.create(`<img src="${event.target.dataset.source}" alt="${event.target.alt}" />>`);
-    lightbox.show();}
-    } )
-
+const lightbox = new SimpleLightbox(".gallery a", {
+    captionsData: "alt",
+    captionDelay: 250,
+  });
 
 
 
