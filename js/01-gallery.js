@@ -17,13 +17,12 @@ for (const item of galleryItems){
 }
 gallery.addEventListener("click",(event) => {
     event.preventDefault();
-    // console.log(event.target);
+if(event.target.classList.contains("gallery__image")){
     const lightbox = basicLightbox.create(`<img src="${event.target.dataset.source}" alt="${event.target.alt}" />>`);
-    lightbox.show();
+    lightbox.show();}
     } )
 
 
 
 
 
-console.log(galleryItems);
