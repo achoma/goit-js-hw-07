@@ -33,12 +33,4 @@ img.height = "300";
 
 gallery.append(img);
 document.body.append(gallery);
-// Na co zwróci uwagę mentor podczas sprawdzania:
 
-// Stworzona i dodana do DOM galeria z trzema obrazami.
-// Galeria dodana do listy ul.gallery i składa się z 6 elementów < li >,
-//   w których znajdują się elementy < img >.
-// Do tworzenia elementów <img> użyto danych z tablicy obiektów images.
-// Wszystkie elementy galerii dodane do DOM w jednej operacji dodawania.
-// Istnieje minimalne stylizowanie galerii przy użyciu flexboxów
-//  za pomocą klas CSS.
