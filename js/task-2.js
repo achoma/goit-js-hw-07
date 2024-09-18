@@ -22,5 +22,23 @@ const images = [
   {
     url: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
     alt: "Lighthouse Coast Sea",
-  }
+  },
 ];
+const gallery = document.querySelector(".gallery");
+const img = document.createElement("img");
+img.alt = images.alt;
+img.url = images.url;
+img.width = "300";
+img.height = "300";
+
+gallery.append(img);
+document.body.append(gallery);
+// Na co zwróci uwagę mentor podczas sprawdzania:
+
+// Stworzona i dodana do DOM galeria z trzema obrazami.
+// Galeria dodana do listy ul.gallery i składa się z 6 elementów < li >,
+//   w których znajdują się elementy < img >.
+// Do tworzenia elementów <img> użyto danych z tablicy obiektów images.
+// Wszystkie elementy galerii dodane do DOM w jednej operacji dodawania.
+// Istnieje minimalne stylizowanie galerii przy użyciu flexboxów
+//  za pomocą klas CSS.
